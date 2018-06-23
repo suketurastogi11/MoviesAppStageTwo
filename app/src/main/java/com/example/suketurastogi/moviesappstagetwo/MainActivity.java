@@ -343,4 +343,10 @@ public class MainActivity extends AppCompatActivity implements MoviesAdapter.Mov
 
         super.onSaveInstanceState(outState);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadMoviesData();
+    }
 }
